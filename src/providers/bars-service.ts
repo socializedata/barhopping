@@ -19,7 +19,7 @@ export class BarsService {
  
     return new Promise(resolve => {
  
-      this.http.get('http://localhost:8080/api/bars')
+      this.http.get('https://barhoppingserver.herokuapp.com/api/bars')
         .map(res => res.json())
         .subscribe(data => {
           this.data = data;
